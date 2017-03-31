@@ -1,92 +1,46 @@
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-$red:#993366;
-$black:#020c22;
-$blue:#5ca1d6;
+@import 'clear';
+@import 'vars';
 
 body {
-    font-family: 'PragmaticaC';
-    font-size: 16px;
-    line-height: 30px;
-    color: $black;
-    background-color: #fff;
-}
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  font-family: 'PragmaticaC';
+  font-size: 16px;
+  line-height: 30px;
+  color: $black;
+  background-color: #fff;
 }
 h1{
-    font-family: 'PragmaticaC-Bold';
-    font-size: 22px;
+  font-family: 'PragmaticaC-Bold';
+  font-size: 22px;
 }
-
 h3{
-    display: inline-block;
-    font-size: 18px;
-    line-height: 25px;
-    margin-bottom: 46px;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: $blue;
-    padding: 10px 10px;
-    width: 100%;
-    text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 46px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $blue;
+  padding: 10px 10px;
+  width: 100%;
+  text-align: center;
 }
-
 h4{
-    font-family: 'PragmaticaC-Bold';
-    font-size: 20px;
-    margin-bottom: 20px;
-    line-height: 28px;
+  font-family: 'PragmaticaC-Bold';
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 28px;
 }
 h5{
-    color: $blue;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+  color: $blue;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 .red_text{
     color: $red;
 }
 /***********header***********/
-
 
 section{
     padding: 100px 0;
@@ -274,30 +228,28 @@ content{
   }
   .photo_slider, .video_slider{
     margin-bottom: 30px;
-    .owl-dots{
-      text-align: center;
-      .owl-dot{
+  }
+  .owl-dots{
+    text-align: center;
+    .owl-dot{
+      display: inline-block;
+      span{
+        border-radius: 50%;
+        border: 2px solid $blue;
+        height: 15px;
+        width: 15px;
         display: inline-block;
+        margin: 30px 10px;
+      }
+      &:hover{
         span{
-          border-radius: 50%;
-          border: 2px solid $blue;
-          height: 20px;
-          width: 20px;
-          display: inline-block;
-          margin: 30px 10px;
-
+          background-color: $blue;
         }
-        &:hover{
-          span{
-            background-color: $blue;
-          }
+      }
+      &.active{
+        span{
+          background-color: $blue;
         }
-        &.active{
-          span{
-            background-color: $blue;
-          }
-        }
-
       }
     }
   }
@@ -306,7 +258,7 @@ content{
       a{
         cursor: pointer;
         img{
-          width: 100%;
+          margin-bottom: 15px;
         }
         &:hover{
           h5{
@@ -314,6 +266,15 @@ content{
           }
         }
       }
+    }
+  }
+  .all-news{
+    display: block;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 45px;
+    &:hover{
+      text-decoration: none;
     }
   }
   .sports_variants{
@@ -324,7 +285,7 @@ content{
       justify-content: center;
       .sports_item{
         display: inline-block;
-            padding: 10px 30px;
+        padding: 10px 30px;
         a{
           cursor: pointer;
           p{
@@ -361,8 +322,7 @@ content{
   }
 }
 .for_form{
-    display: none;
-
+  display: none;
 }
 footer{
   margin-top: 90px;
@@ -396,7 +356,6 @@ footer{
     }
   }
   .copyration{
-
     p{
       font-size: 18px;
     }
@@ -404,16 +363,7 @@ footer{
   .logo_footer{
     float: right;
   }
-
 }
 
-@media (max-width: 768px) {
-
-
-    footer{
-        padding: 30px 0;
-        .logo{
-            text-align: center;
-        }
-    }
-}
+//ALWAYS END
+@import "media";

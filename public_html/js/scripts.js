@@ -16,4 +16,44 @@ $(document).ready(function(){
     nav:false,
     dots: true
   });
+  $('.slider_news').owlCarousel({
+    margin:10,
+    loop:true,
+    autoWidth:false,
+    items:3,
+    nav:false,
+    dots: true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:2,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:3,
+        }
+    }
+	});
+  $('.slider_inter').owlCarousel({
+    margin:10,
+    loop:true,
+    autoWidth:false,
+    items:3,
+    nav:false,
+    dots: true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:2,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:3,    
+        }
+    }
+	});
 });

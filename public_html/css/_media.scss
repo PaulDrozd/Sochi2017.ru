@@ -1,6 +1,6 @@
 /*==========  _media.scss  ==========*/
 /*==========  Mobile First Method  ==========*/
-@media only screen and (min-width : 340px){
+@media only screen and (max-width : 768px){
 	h3{
 		margin-bottom: 30px;
 	}
@@ -28,7 +28,22 @@
 		.photo_slider, .video_slider{
 	    margin-bottom: 0px;
 		}
-
+		.inf_partners,
+	  .partners{
+	    a{
+	      padding: 10px 15px;
+	    }
+		}
+	}
+	footer{
+		margin-top: 30px;
+		padding: 20px;
+		.copyration{
+			margin-top: 15px;
+	    p{
+	      font-size: 14px;
+	    }
+	  }
 	}
 }
 

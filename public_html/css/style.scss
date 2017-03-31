@@ -1,0 +1,419 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+$red:#993366;
+$black:#020c22;
+$blue:#5ca1d6;
+
+body {
+    font-family: 'PragmaticaC';
+    font-size: 16px;
+    line-height: 30px;
+    color: $black;
+    background-color: #fff;
+}
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1{
+    font-family: 'PragmaticaC-Bold';
+    font-size: 22px;
+}
+
+h3{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 46px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $blue;
+    padding: 10px 10px;
+    width: 100%;
+    text-align: center;
+}
+
+h4{
+    font-family: 'PragmaticaC-Bold';
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+h5{
+    color: $blue;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.red_text{
+    color: $red;
+}
+/***********header***********/
+
+
+section{
+    padding: 100px 0;
+}
+.align-right{
+    text-align: right;
+}
+.align-center{
+    text-align: center;
+}
+.wrapper{
+  background: url(../img/BG.png)center top no-repeat ;
+  background-attachment: fixed;
+  .container{
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+header{
+  .sochi{
+    margin-top: 40px;
+  }
+  .logo{
+    margin-left: 40px;
+  }
+  .langers{
+    display: inline-block;
+    margin-right: 40px;
+    a{
+      text-transform: uppercase;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: 29px;
+      width: 29px;
+      &.ru{
+        background-image: url(../img/RU.png);
+          &.active{
+            background-image: url(../img/RU_hover.png);
+          }
+        &:hover{
+          background-image: url(../img/RU_hover.png);
+        }
+      }
+      &.en{
+        background-image: url(../img/EN.png);
+        &:hover{
+          background-image: url(../img/EN_hover.png);
+        }
+        &.active{
+          background-image: url(../img/EN_hover.png);
+        }
+      }
+    }
+  }
+  .social_sochi{
+    margin-top: 40px;
+    display: inline-block;
+    ul{
+      li{
+        display: inline-block;
+        margin-right: 5px;
+        a{
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          background-position: center;
+          background-repeat: no-repeat;
+          &.vk{
+            background-image:url(../img/vk.png);
+            &:hover{
+              background-image:url(../img/vk_hover.png);
+            }
+          }
+          &.inst{
+            background-image:url(../img/inst.png);
+            &:hover{
+              background-image:url(../img/inst_hover.png);
+            }
+          }
+          &.tw{
+            background-image:url(../img/tw.png);
+            &:hover{
+              background-image:url(../img/tw_hover.png);
+            }
+          }
+          &.fc{
+            background-image:url(../img/fc.png);
+            &:hover{
+              background-image:url(../img/fc_hover.png);
+            }
+          }
+          &.ok{
+            background-image:url(../img/ok.png);
+            &:hover{
+              background-image:url(../img/ok_hover.png);
+            }
+          }
+          &.y{
+            background-image:url(../img/y.png);
+            &:hover{
+              background-image:url(../img/y_hover.png);
+            }
+          }
+        }
+      }
+    }
+    .sochi_wrapp{
+      p{
+        font-size: 20px;
+        text-transform: uppercase;
+        line-height: 38px;
+        display: table-cell;
+        vertical-align: middle;
+        img{
+          height: 20px;
+        }
+      }
+    }
+  }
+  form{
+    padding-left: 35px;
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    img{
+      display: inline-block;
+    }
+    input{
+      border: none;
+      border-bottom: 2px solid $red;
+      width: 68%;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  nav{
+    ul{
+      background: linear-gradient(to bottom, #9a3367, #cc3399);
+      li{
+        display: inline-block;
+        a{
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 15px 33px;
+          color: #fff;
+          font-size: 18px;
+          &:hover{
+            color: #fff;
+            cursor: pointer;
+            background-color:$blue;
+            text-decoration: none;
+          }
+          &.active{
+            color: #fff;
+            background-color:$blue;
+          }
+        }
+      }
+    }
+  }
+}
+content{
+  .red_button{
+    background: linear-gradient(to bottom, #9a3367, #cc3399);
+    //border-radius: 10px;
+    //border: 2px solid $red;
+    display: inline-block;
+    text-transform: uppercase;
+     font-size: 26px;
+     width: 100%;
+     margin-top: 35px;
+     margin-bottom: 90px;
+    text-align: center;
+    padding: 12px 40px;
+    color:#fff;
+    &:hover{
+      cursor: pointer;
+      text-decoration: none;
+      //background: linear-gradient(to top, #9a3367, #cc3399);
+      color: #fff;
+      background:$blue;
+    }
+  }
+  .photo_slider, .video_slider{
+    margin-bottom: 30px;
+    .owl-dots{
+      text-align: center;
+      .owl-dot{
+        display: inline-block;
+        span{
+          border-radius: 50%;
+          border: 2px solid $blue;
+          height: 20px;
+          width: 20px;
+          display: inline-block;
+          margin: 30px 10px;
+
+        }
+        &:hover{
+          span{
+            background-color: $blue;
+          }
+        }
+        &.active{
+          span{
+            background-color: $blue;
+          }
+        }
+
+      }
+    }
+  }
+  .slider_vert{
+    .item{
+      a{
+        cursor: pointer;
+        img{
+          width: 100%;
+        }
+        &:hover{
+          h5{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .sports_variants{
+    margin-bottom: 60px;
+    .sports_item_wrapp{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      .sports_item{
+        display: inline-block;
+            padding: 10px 30px;
+        a{
+          cursor: pointer;
+          p{
+            font-size: 14px;
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  .obj_item_wrapp{
+    padding-bottom: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .obj_item{
+      display: inline-block;
+      padding: 10px 15px;
+      a{
+        cursor: pointer;
+      }
+    }
+  }
+  .inf_partners,
+  .partners{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    a{
+      display: inline-block;
+      padding: 10px 45px;
+      cursor: pointer;
+    }
+  }
+}
+.for_form{
+    display: none;
+
+}
+footer{
+  margin-top: 90px;
+  padding: 20px 35px 50px 20px;
+  color:#993366;
+  ul{
+    display: inline-block;
+    //width: 20%;
+    //margin-right: 20px;
+    p{
+      margin-bottom: 15px;
+      a{
+        text-transform: uppercase;
+        color:#993366;
+        text-decoration: none;
+        &:hover{
+          text-decoration:underline;
+        }
+      }
+    }
+    li{
+      a{
+        display: block;
+        text-decoration: none;
+        color:#993366;
+        font-style: 14px;
+        &:hover{
+          text-decoration:underline;
+        }
+      }
+    }
+  }
+  .copyration{
+
+    p{
+      font-size: 18px;
+    }
+  }
+  .logo_footer{
+    float: right;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+
+    footer{
+        padding: 30px 0;
+        .logo{
+            text-align: center;
+        }
+    }
+}

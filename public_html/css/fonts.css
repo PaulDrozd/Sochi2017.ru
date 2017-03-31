@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'PragmaticaC';
+    src: url("../fonts/PragmaticaC.eot");
+    src: url("../fonts/PragmaticaC.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PragmaticaC.woff") format("woff"),
+    url("../fonts/PragmaticaC.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PragmaticaC-Italic';
+    src: url("../fonts/PragmaticaC-Italic.eot");
+    src: url("../fonts/PragmaticaC-Italic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PragmaticaC-Italic.woff") format("woff"),
+    url("../fonts/PragmaticaC-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PragmaticaC-Bold';
+    src: url("../fonts/PragmaticaC-Bold.eot");
+    src: url("../fonts/PragmaticaC-Bold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PragmaticaC-Bold.woff") format("woff"),
+    url("../fonts/PragmaticaC-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PragmaticaC-BoldItalic';
+    src: url("../fonts/PragmaticaC-BoldItalic.eot");
+    src: url("../fonts/PragmaticaC-BoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PragmaticaC-BoldItalic.woff") format("woff"),
+    url("../fonts/PragmaticaC-BoldItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

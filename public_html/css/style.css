@@ -1,0 +1,262 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: 'PragmaticaC';
+  font-size: 16px;
+  line-height: 30px;
+  color: #020c22;
+  background-color: #fff;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-family: 'PragmaticaC-Bold';
+  font-size: 22px;
+}
+
+h2 {
+  display: inline-block;
+  font-family: 'PragmaticaC-Bold';
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+
+h2:before {
+  display: inline-block;
+  content: "";
+  height: 0;
+  width: 0;
+  margin-right: 60px;
+  border-top: 36px solid #993366;
+  border-right: 36px solid transparent;
+}
+
+h3 {
+  font-family: 'PragmaticaC-Bold';
+  font-size: 27px;
+  line-height: 39px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-family: 'PragmaticaC-Bold';
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 28px;
+}
+
+h5 {
+  font-family: 'PragmaticaC-Bold';
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.red_text {
+  color: #993366;
+}
+
+/***********header***********/
+section {
+  padding: 100px 0;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+header .sochi {
+  margin-top: 40px;
+}
+header .langers {
+  display: inline-block;
+  margin-right: 30px;
+}
+header .langers a {
+  text-transform: uppercase;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 29px;
+  width: 29px;
+}
+header .langers a.ru {
+  background-image: url(../img/RU.png);
+}
+header .langers a.ru.active {
+  background-image: url(../img/RU_hover.png);
+}
+header .langers a.ru:hover {
+  background-image: url(../img/RU_hover.png);
+}
+header .langers a.en {
+  background-image: url(../img/EN.png);
+}
+header .langers a.en:hover {
+  background-image: url(../img/EN_hover.png);
+}
+header .langers a.en.active {
+  background-image: url(../img/EN_hover.png);
+}
+header .social_sochi {
+  margin-top: 40px;
+  display: inline-block;
+}
+header .social_sochi ul li {
+  display: inline-block;
+  margin-right: 4px;
+}
+header .social_sochi ul li a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header .social_sochi ul li a.vk {
+  background-image: url(../img/vk.png);
+}
+header .social_sochi ul li a.vk:hover {
+  background-image: url(../img/vk_hover.png);
+}
+header .social_sochi ul li a.inst {
+  background-image: url(../img/inst.png);
+}
+header .social_sochi ul li a.inst:hover {
+  background-image: url(../img/inst_hover.png);
+}
+header .social_sochi ul li a.tw {
+  background-image: url(../img/tw.png);
+}
+header .social_sochi ul li a.tw:hover {
+  background-image: url(../img/tw_hover.png);
+}
+header .social_sochi ul li a.fc {
+  background-image: url(../img/fc.png);
+}
+header .social_sochi ul li a.fc:hover {
+  background-image: url(../img/fc_hover.png);
+}
+header .social_sochi ul li a.ok {
+  background-image: url(../img/ok.png);
+}
+header .social_sochi ul li a.ok:hover {
+  background-image: url(../img/ok_hover.png);
+}
+header .social_sochi ul li a.y {
+  background-image: url(../img/y.png);
+}
+header .social_sochi ul li a.y:hover {
+  background-image: url(../img/y_hover.png);
+}
+header .social_sochi .sochi_wrapp p {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 38px;
+  display: table-cell;
+  vertical-align: middle;
+}
+header .social_sochi .sochi_wrapp p img {
+  height: 20px;
+}
+header form {
+  padding-left: 35px;
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+header form img {
+  display: inline-block;
+}
+header form input {
+  border: none;
+  border-bottom: 2px solid #993366;
+  width: 68%;
+}
+header form input:focus {
+  outline: none;
+}
+header nav ul {
+  background-image: linear-gradient();
+}
+header nav ul li {
+  display: inline-block;
+  margin: 15px 25px;
+}
+header nav ul li a {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 5px 18px;
+  color: #fff;
+}
+header nav ul li a:hover, header nav ul li a.active {
+  color: #993366;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #993366;
+}
+
+.for_form {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 30px 0;
+  }
+  footer .logo {
+    text-align: center;
+  }
+}

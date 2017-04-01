@@ -4,13 +4,32 @@
 body {
   font-family: 'PragmaticaC';
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.4;
   color: $black;
   background-color: #fff;
 }
 h1{
-  font-family: 'PragmaticaC-Bold';
+  display: inline-block;
   font-size: 22px;
+  line-height: 24px;
+  margin-bottom: 46px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $blue;
+  padding: 15px 10px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -19px;
+    width: 38px;
+    height: 38px;
+    background-color: #5ca1d6;
+    transform: rotate(-45deg);
+  }
 }
 h3{
   display: inline-block;
@@ -36,6 +55,11 @@ h5{
   line-height: 20px;
   text-transform: uppercase;
   margin-bottom: 15px;
+}
+P{
+  font-size: 14px;
+  color: $blue;
+  margin: 10px 0px;
 }
 .red_text{
     color: $red;
@@ -309,17 +333,7 @@ content{
       }
     }
   }
-  .inf_partners,
-  .partners{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    a{
-      display: inline-block;
-      padding: 10px 45px;
-      cursor: pointer;
-    }
-  }
+
 }
 .for_form{
   display: none;
@@ -328,6 +342,18 @@ footer{
   margin-top: 90px;
   padding: 20px 35px 50px 20px;
   color:#993366;
+  .inf_partners,
+  .partners{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    a{
+      display: inline-block;
+      padding: 10px 40px;
+      cursor: pointer;
+    }
+  }
   ul{
     display: inline-block;
     //width: 20%;
@@ -364,6 +390,29 @@ footer{
     float: right;
   }
 }
+.button_wrapp{
+  margin-top: 40px;
+}
+.blue_botton{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: $blue;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 18px;
+  &:hover{
+    color:$blue;
+    background-color: #fff;
+    outline: 2px solid $blue;
+    text-decoration: none;
+  }
+}
+//basket
+
+
 
 //ALWAYS END
 @import "media";
